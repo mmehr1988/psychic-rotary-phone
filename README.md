@@ -14,6 +14,8 @@
   1. Header Element: Html has a specific header element. I therefore, placed the header components inside this element.
   2. NAV Element: Html has a specific NAV element.
 
+  - Noticed the first nav link was not working. Looked over the contents section and realized "id" was missing and this was causing an issue. Updated the div to include the appropriate id to allow for proper use of the nav section.
+
 - CSS | Removed the ".header" used in targeting the h1 element as it was not necessary.
 
 ## Section: Hero Img
@@ -24,6 +26,7 @@
 
 - CSS | Condensed the elements where they had the same changes
 - HTML | added an alt attribute to all the images.
+-
 
 ## Section: Footer
 
