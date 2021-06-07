@@ -1,45 +1,46 @@
 # psychic-rotary-phone
 
-## Overview Of Changes Made
+#### SUMMARY OF CHANGES MADE
 
-- Added title that when website is opened, the browser tab reads "Horiseon"
-- Added type="text/css" attribute to the css stylesheet link
-- Added comments to separate the main sections in both HTML & CSS files
-- Organized CSS to follow a logical structure to how the website was structured
+- Using the <header> & <footer> vs. div, this will make search engines understand the content of the page easier.
 
-## Section: Header
+**HEAD Element**
 
-- HTML |
+1. Added title so that the browser tab reads "Horiseon"
+2. Added type="text/css" attribute to the css stylesheet link
 
-  1. Header Element: Html has a specific header element. I therefore, placed the header components inside this element.
-  2. NAV Element: Html has a specific NAV element.
+**BODY ELEMENT**
 
-  - Noticed the first nav link was not working. Looked over the contents section and realized "id" was missing and this was causing an issue. Updated the div to include the appropriate id to allow for proper use of the nav section.
+1. Use of Comments To Organize: Added comments to separate the main sections in both HTML & CSS files. Structured the code to follow a logical structure.
 
-- CSS | Removed the ".header" used in targeting the h1 element as it was not necessary.
+**HEADER ELEMENT**
 
-## Section: Hero Img
+> Header Element: For the header section, I updated the div to use HTML's header element vs. div. In CSS, I removed the ".header" used in targeting the h1 element as it was not necessary.
 
-- Accessibility is an extremely important component to building a website. Since the Hero image was referring to the the css document, there was no location to provide an 'alt' description in the html. Researched how to change the way the code was written, I incorporated the Hero image in the html document to and just add styling to prevent it from cropping.
+> NAV Element: Html has a specific NAV element. I updated the html code and made the necessary changes for the css side.
 
-## Section: Content & Benefits
+> Search Engine Optimization NAV Link: When testing out the code in the browser, I noticed the "Search Engine Optimization" nav link was not working - "id" was missing in the div which housed the code content.
 
-- CSS | Condensed the elements where they had the same changes
-- HTML | added an alt attribute to all the images.
--
+**HERO IMG**
 
-## Section: Footer
+> Accessibility is an extremely important component to building a website. Since the Hero image was referring to the the css document, there was no location to provide an 'alt' description. Researched how to change the html code so that it utilizes the "img" element thus allowing for a "alt" description to be written.
 
-- HTML | I updated the footer section to use the html element footer vs. div. By doing so, I was also able to remove class element as it was no longer necessary. I noticed a weird heart symbol was used. I researched, and I noticed that HTML has specific symbols for this. Decided it would be better to add using html code.
+**CONTENT & BENEFITS**
 
-- CSS | By making the html change, I also updated the CSS styling for the footer to no longer target a class.
+> Removing Unique Class Names: Reviewing the CSS code for both sections, I realized a unique class name for each div was not necessary. I replaced all the class names in the html document for both content / benefits section to read as "content" and "benefits" respectively. Makes for a cleaner & concise code :).
 
-  1. Since the color theme of the body,html was specified to be color: #ffffff, I noticed the footer color also changed. Therefore, I specified the color of the footer should be black.
+> Missing Alt Attributes: Coming back to the importance of accessibility, all img elements in the html file were missing alt descriptions. As a result, I simply used the section titles as the description for each image.
 
-- SEO | This will make search engines understand the content of the page easier.
+**FOOTER**
 
-## CSS | Basic Setup
+> <footer> vs. "class=footer": I updated the footer section to use the html element footer vs. div & class. By doing so, I was also able to remove class element as it was no longer necessary.
 
-- CSS | color: #ffffff | The white color seems to be the theme of the website. I placed the color element inside the basic setup under the body,html styling to reduce the redundant use through out.
+- In CSS, for the functionality of the footer to work with the above change, I updated the footer to no longer target a class.
 
-- CSS | font size: I changed the way font size was used across the different sections. I set a body "font size: 16px" and converted all font sized to be relative. This will make future scaling easier across the entire page.
+> Heart Icon vs. &#10084;&#65039;: I noticed a weird heart symbol was used. Out of curiosity, I researched and came across HTML having specific syntax to for purpose. Decided it would be better to add using html code since I'm not 100% sure the original symbol will translate correctly across all platforms.
+
+**OTHER CHANGES - CSS**
+
+> Font-size [px vs. %] - In CSS, I changed the way the styling for font-size was being utilized. Instead of specifying a px for each, I placed the font size = 16px in the body and updated to use % in relation to the 16px. This should make future updates easier.
+
+> color: #ffffff - Since the theme of the document was to show all writing in white color, I also placed this in the body to target all except: <a> links & <footer>.
