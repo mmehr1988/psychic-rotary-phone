@@ -21,6 +21,8 @@
 
 > Search Engine Optimization NAV Link: When testing out the code in the browser, I noticed the "Search Engine Optimization" nav link was not working - "id" was missing in the div which housed the code content.
 
+> Flexbox For Building Navigation Bar: Looking class assignment, I was able to put together the process of building a versatile header through use of Flexbox.
+
 **HERO IMG**
 
 > Accessibility is an extremely important component to building a website. Since the Hero image was referring to the the css document, there was no location to provide an 'alt' description. Researched how to change the html code so that it utilizes the "img" element thus allowing for a "alt" description to be written.
