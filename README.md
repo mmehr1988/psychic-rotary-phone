@@ -4,7 +4,7 @@
 
 ## COMMENTS
 
-1. Use of Comments To Keep Organized: Added comments to separate the main sections in both HTML & CSS files. Structured the code to follow a logical structure.
+1. Use of Comments To Keep Organized: Added comments to separate the main sections in both HTML & CSS files. Structured the code to follow a logical format.
 
 ## HEAD ELEMENT
 
@@ -13,7 +13,7 @@
 
 ## HEADER ELEMENT
 
-Using the HTML symantics (`<header>` & `<footer>` & `<nav>`) vs. div: Utilizing HTML semantics to structure html document allows for future developers to understand the content of the document easier. It also helps search engines decipher the meaning of the code easier.
+Using the HTML symantics (`<header>` & `<footer>` & `<nav>`) vs. `<div>`: Utilizing HTML semantics to structure html document allows for future developers to understand the content of the document easier. It also helps search engines decipher the meaning of the code in a more precise manner.
 
 1. Header Element: In CSS, I removed the ".header" used in targeting the h1 element as it was not necessary.
 
@@ -21,7 +21,7 @@ Using the HTML symantics (`<header>` & `<footer>` & `<nav>`) vs. div: Utilizing 
 
 3. NAV Link: When testing out the code in the browser, I noticed the "Search Engine Optimization" nav link was not working - "id" was missing in the div which housed the code content.
 
-4. Flexbox For Building Navigation Bar: Looking class assignment, I was able to put together the process of building a versatile header through use of Flexbox.
+4. Flexbox For Building Navigation Bar: I noticed the nav header would continously break onto a new line. To prevent this issue, I was able to put together the process of building a versatile header through use of Flexbox. All thanks to our bootcamp.
 
 ## HERO IMG
 
@@ -46,3 +46,5 @@ Accessibility is an extremely important component to building a website. Since t
 1. Font-size [px vs. %] - In CSS, I changed the way the styling for font-size was being utilized. Instead of specifying a px for each, I placed the font size = 16px in the body and updated to use % in relation to the 16px. This should make future updates easier.
 
 2. color: #ffffff - Since the theme of the document was to show all writing in white color, I also placed this in the body to target all except: <a> links & `<footer>`.
+
+3. Normalize CSS - I added normalize css file as I've read it renders all elements more consistently across browsers.
