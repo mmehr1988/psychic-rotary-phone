@@ -2,24 +2,24 @@
 
 #### SUMMARY OF CHANGES MADE
 
-- Using the `<header>` & `<footer>` vs. div, this will make search engines understand the content of the page easier.
+## COMMENTS
 
-## HEAD Element
+1. Use of Comments To Keep Organized: Added comments to separate the main sections in both HTML & CSS files. Structured the code to follow a logical structure.
+
+## HEAD ELEMENT
 
 1. Added title so that the browser tab reads "Horiseon"
 2. Added type="text/css" attribute to the css stylesheet link
 
-## BODY ELEMENT
-
-1. Use of Comments To Organize: Added comments to separate the main sections in both HTML & CSS files. Structured the code to follow a logical structure.
-
 ## HEADER ELEMENT
 
-1. Header Element: For the header section, I updated the div to use HTML's header element vs. div. In CSS, I removed the ".header" used in targeting the h1 element as it was not necessary.
+Using the HTML symantics (`<header>` & `<footer>` & `<nav>`) vs. div: Utilizing HTML semantics to structure html document allows for future developers to understand the content of the document easier. It also helps search engines decipher the meaning of the code easier.
+
+1. Header Element: In CSS, I removed the ".header" used in targeting the h1 element as it was not necessary.
 
 2. NAV Element: Html has a specific NAV element. I updated the html code and made the necessary changes for the css side.
 
-3. Search Engine Optimization NAV Link: When testing out the code in the browser, I noticed the "Search Engine Optimization" nav link was not working - "id" was missing in the div which housed the code content.
+3. NAV Link: When testing out the code in the browser, I noticed the "Search Engine Optimization" nav link was not working - "id" was missing in the div which housed the code content.
 
 4. Flexbox For Building Navigation Bar: Looking class assignment, I was able to put together the process of building a versatile header through use of Flexbox.
 
