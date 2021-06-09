@@ -1,50 +1,100 @@
 # psychic-rotary-phone
 
-#### SUMMARY OF CHANGES MADE
+Assignment Summary: Refactoring
+Company: Horiseon
 
-## COMMENTS
+Refactoring: Code refactoring is defined as the process of restructuring computer code without changing or adding to its external behavior and functionality.
 
-1. Use of Comments To Keep Organized: Added comments to separate the main sections in both HTML & CSS files. Structured the code to follow a logical format.
+Goal: To make the website more accessible.
 
-## HEAD ELEMENT
+Accessibility: Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them.
 
-1. Added title so that the browser tab reads "Horiseon"
-2. Added type="text/css" attribute to the css stylesheet link
+- Accessibility & SEO: Accessible sites rank higher in search engines.
+- Accessibility & Litigation: It also helps companies avoid litigation, which might arise if people with disabilities can't access a website.
 
-## HEADER ELEMENT
+For more information, check out [The Four Principles of Accessibility guide](https://willowtreeapps.com/ideas/the-four-principles-of-accessibility).
 
-Using the HTML symantics (`<header>` & `<footer>` & `<nav>`) vs. `<div>`: Utilizing HTML semantics to structure html document allows for future developers to understand the content of the document easier. It also helps search engines decipher the meaning of the code in a more precise manner.
+Scout Rule & Web Development: SEFCO :)
 
-1. Header Element: In CSS, I removed the ".header" used in targeting the h1 element as it was not necessary.
+- Sustainable Code: Improve the codebase for long-term.
+- Efficient Code: Making use of semantic HTML elements. Consolidating the selectors and properties where possible.
+- Functional Code: All links are functioning correctly.
+- Cleaner Code: Always try to leave the code a little cleaner than when you found it.
+- Organized Code: Use comments before each element or section of the page to create make code easier to read.
 
-2. NAV Element: Html has a specific NAV element. I updated the html code and made the necessary changes for the css side.
+#### Refactoring Process
 
-3. NAV Link: When testing out the code in the browser, I noticed the "Search Engine Optimization" nav link was not working - "id" was missing in the div which housed the code content.
+Upon opening up the assignment files in VSCode, the first thing I did was to open the html in the browser and review the website as a user. By doing so, I was able to understand who Horiseon was and what the website intentions were.
 
-4. Flexbox For Building Navigation Bar: I noticed the nav header would continously break onto a new line. To prevent this issue, I was able to put together the process of building a versatile header through use of Flexbox. All thanks to our bootcamp.
+A digital marketing services agency that provides strategies in three main areas: Search Engine Optimization, Online Reputation Management, Social Media Marketing. For this reason, I understood the company wants users to focus on the three boxes below the large image.
 
-## HERO IMG
+In terms of functionality, the first link “Search Engine Optimization” was not working. This was something I was going to have to look into.
 
-Accessibility is an extremely important component to building a website. Since the Hero image was referring to the the css document, there was no location to provide an 'alt' description. Researched how to change the html code so that it utilizes the "img" element thus allowing for a "alt" description to be written.
+Once I felt I got a good understanding of the website, I decided to tackle the refactoring process.
 
-## CONTENT & BENEFITS
+## Missing Title
 
-1. Removing Unique Class Names: Reviewing the CSS code for both sections, I realized a unique class name for each div was not necessary. I replaced all the class names in the html document for both content / benefits section to read as "content" and "benefits" respectively. Makes for a cleaner & concise code :).
+Updated the title of the document to Horiseon
 
-2. Missing Alt Attributes: Coming back to the importance of accessibility, all img elements in the html file were missing alt descriptions. As a result, I simply used the section titles as the description for each image.
+## Use of Comments For Organizational Puproses
 
-## FOOTER
+For the HTML file, I separated the code into 4 parts.
 
-1. `<footer>` vs. "class=footer": I updated the footer section to use the html element footer vs. div & class. By doing so, I was also able to remove class element as it was no longer necessary.
+1. Header
+2. Large Image
+3. Main Section
+   - Content – For the 3 content boxes describing what services Horiseon provides
+   - Benefits – For the side benefits bar
+4. Footer
 
-- In CSS, for the functionality of the footer to work with the above change, I updated the footer to no longer target a class.
+For the CSS file, I separated the styling with the same descriptions used in the HTML file. I also noticed that some of the content section was under the benefits section which did not logically make sense.
 
-2. Heart Icon vs. HTML Code `&#10084;&#65039;`: I noticed a weird heart symbol was used. Out of curiosity, I researched and came across HTML having specific syntax to for purpose. Decided it would be better to add using html code since I'm not 100% sure the original symbol will translate correctly across all platforms.
+## Use of Semantic HTML
 
-## OTHER CHANGES - CSS
+The below is the list of semantic html elements used in this assignment vs. each section of the code to replace the `<divs>`.
 
-1. Font-size [px vs. %] - In CSS, I changed the way the styling for font-size was being utilized. Instead of specifying a px for each, I placed the font size = 16px in the body and updated to use % in relation to the 16px. This should make future updates easier.
+1. Header
+   - `<header>`
+   - `<nav>` - For the navigation links
+2. Large Image
+   - `<figure>` - For the standalone image.
+3. Main Section
+   - `<main>`: To signify the main section of the webpage
+   - `<section>`: To separate the content and benefits section
+   - `<article>` & `<aside>`: When reviewing the webpage for the first time, the contents section was what I believe to be the attention grabber. The benefits section was secondary. Therefore, `<article>` was used for the content boxes and `<aside>` for the benefits side bar.
+4. Footer
+   a. `<footer>` - To specify the footer section of the webpage
 
-2. color: #ffffff - Since the theme of the document was to show all writing in white color, I also placed this in the body to target all except: <a> links & `<footer>`.
+## Removal of Unique Class Names
 
-3. Normalize CSS - I added normalize css file as I've read it renders all elements more consistently across browsers.
+Since the styling for the content boxes and benefits side bar were all the same, I removed the individual unique class names. This provided the opportunity to clean up the styling page by using one class name for each section.
+
+## Missing Alt Descriptions
+
+All img elements in the html file were missing alt descriptions. For accessibility purposes, I gave all images their own descriptions.
+
+## Broken Navigation Link
+
+When testing out the code in the browser, I noticed the "Search Engine Optimization" nav link was not working. I was able to fix this by including an “id=search-engine-optimization” in `<article>` .
+
+## Font-Size & Color & Font-Family
+
+- Font-Size: In CSS, I changed the way the styling for font-size was being utilized. I placed the font size of 16px under the basic setup as the base font size for the webpage. I then updated all references to font-size to use % in relation to the 16px.
+
+- Color: The theme of the webpage was to show text color in white color. For this reason, I also placed the ‘color: #ffffff’ under the basic setup.
+
+- Font-Family: It’s typically a good idea to follow a consistent font-family across a webpage. For this reason, I placed the ‘Gills Sans’ in the basic setup section as well.
+
+## Flexbox For Building Navigation Bar
+
+I noticed the nav header would continuously break onto a new line. To prevent this issue, I was able to put together the process of building a versatile header through use of Flexbox. All thanks to our bootcamp.
+
+## Heart Symbol vs. HTML Code `&#10084;&#65039
+
+I noticed a weird heart symbol was used in the footer. Out of curiosity, I researched and came across HTML having specific syntax for these situations. Decided it would be better to add using html code since I'm not 100% sure the original symbol will translate correctly across all platforms.
+
+## Final Image
+
+The following image demonstrates the final output of my refactoring work.
+
+![alt text](./assets/images/psychic-rotary-phone.png)

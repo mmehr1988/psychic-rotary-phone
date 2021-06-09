@@ -24,8 +24,10 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  padding: 1%;
+
+  /* Used baseline for the nav links to not be centered with the Logo  */
+  align-items: baseline;
+  padding: 2%;
   background-color: #2a607c;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -53,10 +55,10 @@ a {
 }
 
 /* ----------------------------------------------------- */
-/* HERO IMG */
+/* LARGE IMAGE */
 /* ----------------------------------------------------- */
 
-.hero img {
+.large-image img {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -78,7 +80,7 @@ a {
   background-color: #0072bb;
 }
 
-/* To remove the margin bottom for the Social Media Marketing content box.  */
+/* To remove the margin bottom for the Social Media Marketing content box as there was no margin-bottom for the .section-benefits */
 .content:last-child {
   margin-bottom: 0;
 }
@@ -116,16 +118,16 @@ a {
   background-color: #2589bd;
 }
 
-.benefit {
+.benefits {
   margin-bottom: 32px;
 }
 
-.benefit h3 {
+.benefits h3 {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.benefit img {
+.benefits img {
   display: block;
   margin: 10px auto;
   max-width: 150px;
