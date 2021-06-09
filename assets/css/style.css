@@ -42,14 +42,14 @@ nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  min-width: 700px;
 }
 
 a {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 105%;
+  padding-top: 15px;
+  margin-right: 20px;
   text-decoration: none;
+  font-size: 125%;
+  color: #ffffff;
 }
 
 /* ----------------------------------------------------- */
@@ -78,6 +78,20 @@ a {
   background-color: #0072bb;
 }
 
+/* To remove the margin bottom for the Social Media Marketing content box.  */
+.content:last-child {
+  margin-bottom: 0;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  font-size: 225%;
+}
+
+.content img {
+  max-height: 200px;
+}
+
 .float-left {
   float: left;
   margin-right: 25px;
@@ -86,15 +100,6 @@ a {
 .float-right {
   float: right;
   margin-left: 25px;
-}
-
-.content img {
-  max-height: 200px;
-}
-
-.content h2 {
-  margin-bottom: 20px;
-  font-size: 220%;
 }
 
 /* ----------------------------------------------------- */
