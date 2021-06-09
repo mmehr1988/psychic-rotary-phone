@@ -1,6 +1,7 @@
 # psychic-rotary-phone
 
 Assignment Summary: Refactoring
+
 Company: Horiseon
 
 Refactoring: Code refactoring is defined as the process of restructuring computer code without changing or adding to its external behavior and functionality.
@@ -22,7 +23,7 @@ Scout Rule & Web Development: SEFCO :)
 - Cleaner Code: Always try to leave the code a little cleaner than when you found it.
 - Organized Code: Use comments before each element or section of the page to create make code easier to read.
 
-#### Refactoring Process
+# Refactoring Process
 
 Upon opening up the assignment files in VSCode, the first thing I did was to open the html in the browser and review the website as a user. By doing so, I was able to understand who Horiseon was and what the website intentions were.
 
@@ -89,7 +90,7 @@ When testing out the code in the browser, I noticed the "Search Engine Optimizat
 
 I noticed the nav header would continuously break onto a new line. To prevent this issue, I was able to put together the process of building a versatile header through use of Flexbox. All thanks to our bootcamp.
 
-## Heart Symbol vs. HTML Code `&#10084;&#65039
+## Heart Symbol vs. HTML Code `&#10084;&#65039`
 
 I noticed a weird heart symbol was used in the footer. Out of curiosity, I researched and came across HTML having specific syntax for these situations. Decided it would be better to add using html code since I'm not 100% sure the original symbol will translate correctly across all platforms.
 
